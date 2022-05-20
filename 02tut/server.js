@@ -3,8 +3,10 @@ const path = require('path');
 
 const fileOps = async () => {
     try {
+        //unlink is what you'd use to delete a file
         await fsPromises.unlink(path.join(__dirname, 'files', 'starter.txt'))
         const data = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'),'utf8');
+        
         // const readData = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf8');
         await fsPromises.writeFile(path.join(__dirname, 'files', 'promiseWrite.txt'), data);
         await fsPromises.appendFile(path.join(__dirname, 'files', 'promiseWrite.txt'), '\n\n Temi', 'utf8');
