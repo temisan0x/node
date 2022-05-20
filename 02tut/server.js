@@ -3,6 +3,7 @@ const path = require('path');
 
 const fileOps = async () => {
     try {
+        await fsPromises.unlink(path.join(__dirname, 'files', 'starter.txt'))
         const data = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'),'utf8');
         // const readData = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf8');
         await fsPromises.writeFile(path.join(__dirname, 'files', 'promiseWrite.txt'), data);
