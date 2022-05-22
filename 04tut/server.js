@@ -1,3 +1,5 @@
+import logEvents from "./logEvents";
+
 const http = require('http');
 const path = require('path');
 const fs = require('fs')
@@ -31,6 +33,8 @@ const serveFile = async (filePath, contentType, response) => {
         );
     } catch (error) {
         console.log(error);
+        //emitter to check for error
+        myEmitter.emit('log', `${error.url}\t${error.method}`, 'errLog.txt')
         response.statusCode = 500;
         response.end();
     }
@@ -40,7 +44,7 @@ const serveFile = async (filePath, contentType, response) => {
 const server = http.createServer((req, res) => {
 
     console.log(req.url, req.method);
-
+    myEmitter.emit('log', `${req.url}\t${req.method}`, 'reqLog.txt')
     //build a path and then serve the file 
     const extension = path.extname(req.url);
 
@@ -107,3 +111,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
+myEmitter.on('log', (msg) => logEvents(msg));
+    
