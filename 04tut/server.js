@@ -1,4 +1,4 @@
-import logEvents from "./logEvents";
+const logEvents = require("./logEvents");
 
 const http = require('http');
 const path = require('path');
@@ -13,7 +13,7 @@ class Emitter extends EventEmitter { };
 
 //initialize object
 const myEmitter = new Emitter();
-
+myEmitter.on('log', (msg,fileName) => logEvents(msg, fileName));
 const PORT = process.env.PORT || 3500;
 
 const serveFile = async (filePath, contentType, response) => {
@@ -59,7 +59,6 @@ const server = http.createServer((req, res) => {
             break;
         case '.json':
             contentType = 'application/json';
-            break;
         case '.jpg':
             contentType = 'image/jpg';
             break;
@@ -108,8 +107,4 @@ const server = http.createServer((req, res) => {
         }
     }
 });
-
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-myEmitter.on('log', (msg) => logEvents(msg));
-    

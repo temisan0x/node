@@ -1,0 +1,2 @@
+20220522	22:50:29	43ef2bf8-ed26-4de8-b3bf-7ce6fce0cf23	/	GETreqLog.txt
+20220522	22:50:30	53e586b3-2492-4eb8-8bd3-dd317f1383c9	/img/tut.jpg	GETreqLog.txt
