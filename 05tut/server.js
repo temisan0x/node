@@ -13,7 +13,7 @@ app.use(logger);
 
 //cors ~ cross origin resource sharing
 
-// app.use(cors())
+app.use(cors())
 //built in middleware to handle urlencoded data
 //request handler (middleware for handling urlencoded data = form-data);
 app.use(express.urlencoded({ extended: false }));
