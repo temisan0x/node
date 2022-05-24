@@ -3,3 +3,4 @@
 20220524	16:11:34	1613c7a3-5704-4ac5-b8ae-053a5e0dda89	GET	undefined	/views/img/tut.jpg	
 20220524	16:11:34	dae811eb-2a44-4965-822b-7f8d5cca13f3	GET	undefined	/views/css/style.css	
 20220524	16:11:34	f97f81f4-2985-424e-9975-e7248194b6ad	GET	undefined	/views/img/tut.jpg	
+20220524	16:19:23	92c20988-1b7b-4c36-8a9c-527d10240f08	GET	https://www.google.com	/	
