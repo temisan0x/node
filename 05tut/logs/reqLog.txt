@@ -50,3 +50,9 @@
 20220524	08:34:19	5f0ffa8b-db76-47d4-9706-c506d40cd517	GET	undefined	/	reqLog.txt
 20220524	08:34:19	c285e913-b510-4101-a92f-8a5776e10402	GET	undefined	/css/style.css	reqLog.txt
 20220524	08:34:20	4b71ff1c-8357-4ea2-9abc-4477ad1a5ddf	GET	undefined	/img/tut.jpg	reqLog.txt
+20220524	15:46:28	035e5d7e-f697-4714-856e-6238ec6c2d16	GET	undefined	/	reqLog.txt
+20220524	15:46:28	dc05b705-986c-458f-b6a4-18d50a20caed	GET	undefined	/css/style.css	reqLog.txt
+20220524	15:46:28	b8bf0d71-7a35-428e-9677-8c107ef7e9bf	GET	undefined	/img/tut.jpg	reqLog.txt
+20220524	15:46:29	2fabe3a1-5f55-4582-8309-df44218ecc89	GET	undefined	/favicon.ico	reqLog.txt
+20220524	15:46:35	b6a48011-153e-48ae-b8a8-092206de717f	GET	undefined	/old-page.html	reqLog.txt
+20220524	15:46:35	7504a098-a214-4d2e-82f4-46902c9acee1	GET	undefined	/new-page.html	reqLog.txt

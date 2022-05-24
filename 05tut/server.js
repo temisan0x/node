@@ -37,7 +37,7 @@ app.get('/new-page(.html)?', (req, res) => {
 });
 
 app.get('/old-page(.html)?', (req, res) => {
-    res.redirect(301, '/new-page.html');
+    res.redirect(301, '/new-page.html'); //301 by default status
 });
 
 //function chaining
