@@ -11,3 +11,6 @@
 20220524	21:59:15	644bb568-7385-4d4e-8d59-4890756c88f3	TypeError: req.status is not a function
 20220524	21:59:26	86813141-8365-4388-8cf0-6bc57cf4a84d	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/view/404.html'
 20220524	22:02:06	a4692f32-65e0-48e2-b1aa-7423601439ed	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/views/404.html'
+20220524	22:22:52	56dd6379-7ecd-4aac-82dc-637df2cdfed7	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
+20220524	22:24:15	7ef572d8-a454-49ff-a95a-cc11adb8331b	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
+20220524	22:24:57	ebd36d08-9c90-4ab7-835b-6d2a4eaddb0d	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage

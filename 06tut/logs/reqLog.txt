@@ -39,3 +39,8 @@
 20220524	22:02:06	33883f35-483f-4777-be9b-8fa478f7d611	GET	undefined	/hey	
 20220524	22:02:24	bc68a369-bdcb-4a17-93cb-13dafd41444c	GET	undefined	/hey	
 20220524	22:02:24	43c5ac64-478f-4597-9839-e71999c7cf4d	GET	undefined	/css/style.css	
+20220524	22:22:52	f3ba9408-207f-499b-9e77-23792bfe5a7b	GET	undefined	/subdir	
+20220524	22:22:53	caf9b9bc-0b5c-48cb-b873-68a6ee471795	GET	undefined	/favicon.ico	
+20220524	22:24:15	fc76ec81-6bef-4c7f-b8fb-e8e3e6c9b630	GET	undefined	/subdir	
+20220524	22:24:57	99db03f7-1481-442a-95bc-e4947694fef0	GET	undefined	/subdir	
+20220524	22:25:35	5282a99a-e97f-4b92-8068-a93d5cecd0b5	GET	undefined	/subdir	

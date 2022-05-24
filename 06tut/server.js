@@ -48,6 +48,8 @@ app.get('^/$|/index(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
+app.use('/subdir', require('./routes/subdir'));
+
 app.get('/new-page(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'new-page.html'));
 });
