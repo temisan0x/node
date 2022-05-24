@@ -58,3 +58,11 @@
 20220524	15:46:35	7504a098-a214-4d2e-82f4-46902c9acee1	GET	undefined	/new-page.html	reqLog.txt
 20220524	15:49:35	68e508c5-3bde-436a-8a4a-3485598a6c93	GET	undefined	/newpage.html	reqLog.txt
 20220524	15:49:35	4ad37f77-af6e-400b-ac39-8e4c45593935	GET	undefined	/css/style.css	reqLog.txt
+20220524	15:52:22	6999feb7-89f9-4b39-83ab-911717a4510b	GET	undefined	/hello.html	reqLog.txt
+20220524	15:52:22	4ae0a559-1d52-4929-a8fc-339939a592d8	GET	undefined	/css/style.css	reqLog.txt
+20220524	15:53:10	3cb18ccf-8ae3-412f-8da7-8d49253b8de0	GET	undefined	/hello	reqLog.txt
+20220524	15:53:10	0be4ce4c-822b-4e93-8b3c-42f6e1e4387c	GET	undefined	/css/style.css	reqLog.txt
+20220524	15:55:04	612b55ef-387a-435b-b063-65d76008282c	GET	undefined	/hello	reqLog.txt
+20220524	15:55:05	3cf8db99-ebca-420c-8a97-bc80369cef11	GET	undefined	/views/index.html	reqLog.txt
+20220524	15:55:05	981ab9b9-df29-446f-8adc-870f35e71b30	GET	undefined	/views/css/style.css	reqLog.txt
+20220524	15:55:05	755499d8-e287-406f-a4a3-4472088b0d9d	GET	undefined	/views/img/tut.jpg	reqLog.txt

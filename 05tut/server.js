@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, './public')));
 //the get method is used to access the route
 
 /**GET file tree route */
+//basically, middleware are functins that have access to the res, req object
 app.get('^/$|/index(.html)?', (req, res) => {
     //regEx specified with a route 
     // res.sendFile('./views/index.html', {root: __dirname});
@@ -61,7 +62,7 @@ app.get('/*', (req, res) => {
 //function chaining
 app.get('/hello(.html)?', (req, res, next) => {
     console.log('attempted to load hello.html');
-    next()
+    next() //moves on the next handler
 }, (req, res) => {
     res.redirect(301, './views/index.html')
 });
