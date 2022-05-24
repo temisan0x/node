@@ -56,3 +56,5 @@
 20220524	15:46:29	2fabe3a1-5f55-4582-8309-df44218ecc89	GET	undefined	/favicon.ico	reqLog.txt
 20220524	15:46:35	b6a48011-153e-48ae-b8a8-092206de717f	GET	undefined	/old-page.html	reqLog.txt
 20220524	15:46:35	7504a098-a214-4d2e-82f4-46902c9acee1	GET	undefined	/new-page.html	reqLog.txt
+20220524	15:49:35	68e508c5-3bde-436a-8a4a-3485598a6c93	GET	undefined	/newpage.html	reqLog.txt
+20220524	15:49:35	4ad37f77-af6e-400b-ac39-8e4c45593935	GET	undefined	/css/style.css	reqLog.txt

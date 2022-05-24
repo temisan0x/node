@@ -40,6 +40,24 @@ app.get('/old-page(.html)?', (req, res) => {
     res.redirect(301, '/new-page.html'); //301 by default status
 });
 
+//404 routing error handler waterfall effect~ all
+
+// app.all('*', (req, res) => {
+//     res.status(404);
+//     if (req.accepts('html')) {
+//         res.sendFile(path.join(__dirname, 'view', '404.html'));
+//     } else if (req.accepts('json')) {
+//         res.json({ error: "404 not found" });
+//     } else {
+//         res.type('txt').send("404 not found");
+//     }
+// });
+
+app.get('/*', (req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'))
+}); //404 statuscode handler
+
+
 //function chaining
 app.get('/hello(.html)?', (req, res, next) => {
     console.log('attempted to load hello.html');
@@ -71,24 +89,6 @@ const three = (req, res) => {
 /**end */
 
 app.get('/chain(.html)?', [one, two, three]);
-
-//404 routing error handler waterfall effect~ all
-
-// app.all('*', (req, res) => {
-//     res.status(404);
-//     if (req.accepts('html')) {
-//         res.sendFile(path.join(__dirname, 'view', '404.html'));
-//     } else if (req.accepts('json')) {
-//         res.json({ error: "404 not found" });
-//     } else {
-//         res.type('txt').send("404 not found");
-//     }
-// });
-
-app.get('*', (req, res) => {
-    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'))
-});
-
 
 //app recieve an error parameter
 app.use(errorHandler);
