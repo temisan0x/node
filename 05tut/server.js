@@ -7,6 +7,7 @@ const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 
 //custom middleware logger
+//grabs the data when submitted
 //these reads file in the directory
 app.use(logger);
 
@@ -14,13 +15,13 @@ app.use(logger);
 
 // app.use(cors())
 //built in middleware to handle urlencoded data
-//request handler (middleware for handling urlencoded data = form-data)
+//request handler (middleware for handling urlencoded data = form-data);
 app.use(express.urlencoded({ extended: false }));
 
 //built in  middleware for json
 app.use(express.json());
 
-//serve static files
+//middleware ~ serve static files
 app.use(express.static(path.join(__dirname, './public')));
 
 //the get method is used to access the route

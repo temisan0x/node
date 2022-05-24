@@ -23,7 +23,7 @@ const logEvents = async (message, logName) => {
     }
 }
 
-//customer middleware function errLog
+//customer middleware function errLog handler
 const logger = ((req, res, next) => {
     logEvents(`${req.method}\t${req.headers.origin}\t${req.url}\t`, 'reqLog.txt')
     console.log(`${req.method} ${req.path}`);
