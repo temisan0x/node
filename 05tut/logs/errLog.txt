@@ -1,0 +1,5 @@
+20220524	16:45:22	b2f257d0-e15c-434a-b226-4a024459d39c	Error: Not allowed by Cors
+20220524	16:45:24	a0199a82-37e2-4e85-882b-2074d7e2f54f	Error: Not allowed by Cors
+20220524	16:45:43	440a1530-faae-4822-90f3-3146a93472c6	Error: Not allowed by Cors
+20220524	16:45:54	212fc3cf-58ae-4941-920b-bfcea4dcad41	Error: Not allowed by Cors
+20220524	17:06:22	6c37aea2-c5b8-4f0d-abe9-91de49e560cf	Error: Not allowed by Cors
