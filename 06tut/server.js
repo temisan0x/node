@@ -38,29 +38,16 @@ app.use(express.json());
 //middleware ~ serve static files
 app.use(express.static(path.join(__dirname, './public')));
 
-//the get method is used to access the route
-
-/**GET file tree route */
-//basically, middleware are functins that have access to the res, req object
-//app.use does not accept regEx
-app.get('^/$|/index(.html)?', (req, res) => {
-    //regEx specified with a route 
-    // res.sendFile('./views/index.html', {root: __dirname});
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
-
-/**subdir*/
+/**serve static files */
+app.use('/', express.static(path.join(__dirname, './public')));
 app.use('/subdir', express.static(path.join(__dirname, './public')));
+/**serve static files */
+
+/**route files*/
+app.use('/', require('./routes/root'))
 app.use('/subdir', require('./routes/subdir'));
-/**subdir */
-
-app.get('/new-page(.html)?', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'new-page.html'));
-});
-
-app.get('/old-page(.html)?', (req, res) => {
-    res.redirect(301, '/new-page.html'); //301 by default status
-});
+app.use('/employees', require('./routes/api/employees'));
+/**route files */
 
 //404 routing error handler waterfall effect~ all
 
@@ -75,11 +62,6 @@ app.all('*', (req, res) => {
     }
 });
 
-// app.all('*', (req, res) => {
-//     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'))
-// }); //404 statuscode handler
-
-
 //function chaining
 app.get('/hello(.html)?', (req, res, next) => {
     console.log('attempted to load hello.html');
@@ -89,28 +71,6 @@ app.get('/hello(.html)?', (req, res, next) => {
 });
 
 /**Get end */
-
-//function chaining ~ middleware
-//these route handlers work the same way of a middleware
-
-/**start */
-const one = (req, res, next) => {
-    console.log('one');
-    next();
-}
-
-const two = (req, res, next) => {
-    console.log('two');
-    next();
-}
-
-const three = (req, res) => {
-    console.log('three');
-    res.send('Finished');
-}
-/**end */
-
-app.get('/chain(.html)?', [one, two, three]);
 
 //app recieve an error parameter
 app.use(errorHandler);
