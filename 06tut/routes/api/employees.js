@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
 const data = {};
 
 data.employees = require('../../data/employees.json');
@@ -25,6 +24,11 @@ router.route('/')
     //delete grabs the id from the json database
     .delete((req, res) => {
         res.json({ "id": req.body.id })
+    });
+
+router.route('/:id')
+    .get((req, res) => {
+        res.json({ "id": req.params.id })
     });
 
 
