@@ -169,3 +169,6 @@
 20220525	13:57:09	cef6da3c-4239-492b-8fa6-bac238e19393	POST	undefined	/employees	
 20220525	13:57:18	56242455-0c38-4c20-984d-ac0df82a981e	DELETE	undefined	/employees/1	
 20220525	13:57:36	f621c258-f4d2-44ad-a675-6fab89dd18f7	GET	undefined	/employees/1	
+20220525	16:55:15	5d10581a-fc4d-4d4d-806a-a15636cd5315	GET	undefined	/jd	
+20220525	16:55:17	6ae806af-5c07-469a-94cc-6cf48c2922a3	GET	undefined	/jd	
+20220525	16:55:17	79e0fc01-dfc2-42ba-a4cc-371ca0872677	GET	undefined	/css/style.css	
