@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const cors = require('cors')
+const cors = require('cors');
+const corsOptions = require('./config/corsOptions')
 const PORT = process.env.PORT || 3500;
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
@@ -10,21 +11,6 @@ const errorHandler = require('./middleware/errorHandler');
 //grabs the data when submitted
 //these reads file in the directory
 app.use(logger);
-
-//cors ~ cross origin resource sharing
-//domains allowed to access our backend;
-const whitelist = ['https://www.site.com', 'http://127.0.0.1:5000', 'http://localhost:3500'];
-
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by Cors'))
-        }
-    },
-    optionsSucessStatus: 200
-}
 
 app.use(cors(corsOptions));
 
