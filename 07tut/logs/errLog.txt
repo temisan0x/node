@@ -1,0 +1,19 @@
+20220524	16:45:22	b2f257d0-e15c-434a-b226-4a024459d39c	Error: Not allowed by Cors
+20220524	16:45:24	a0199a82-37e2-4e85-882b-2074d7e2f54f	Error: Not allowed by Cors
+20220524	16:45:43	440a1530-faae-4822-90f3-3146a93472c6	Error: Not allowed by Cors
+20220524	16:45:54	212fc3cf-58ae-4941-920b-bfcea4dcad41	Error: Not allowed by Cors
+20220524	17:06:22	6c37aea2-c5b8-4f0d-abe9-91de49e560cf	Error: Not allowed by Cors
+20220524	17:36:46	90affbdd-6069-4cd6-98ec-e5b2ad9d29be	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/view/404.html'
+20220524	17:36:47	f811bdfc-ccbd-4e60-bc09-a185b29a2874	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/view/404.html'
+20220524	17:40:59	a936ba64-d3bd-45b4-8441-6ea2606322ff	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/view/404.html'
+20220524	21:58:55	8538a5f6-5f9d-4782-b50f-0a59ab184e59	TypeError: res.accepts is not a function
+20220524	21:58:57	cf6388af-636b-4da0-a24b-443c45ac7772	TypeError: res.accepts is not a function
+20220524	21:59:15	644bb568-7385-4d4e-8d59-4890756c88f3	TypeError: req.status is not a function
+20220524	21:59:26	86813141-8365-4388-8cf0-6bc57cf4a84d	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/view/404.html'
+20220524	22:02:06	a4692f32-65e0-48e2-b1aa-7423601439ed	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/05tut/views/404.html'
+20220524	22:22:52	56dd6379-7ecd-4aac-82dc-637df2cdfed7	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
+20220524	22:24:15	7ef572d8-a454-49ff-a95a-cc11adb8331b	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
+20220524	22:24:57	ebd36d08-9c90-4ab7-835b-6d2a4eaddb0d	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
+20220524	22:28:11	49fd84ba-07ca-409a-b552-d57a28994741	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/06tut/views/subdir/test.html'
+20220524	22:31:07	1d347117-9461-4205-b604-f59ef32cf800	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/06tut/views/subdir/test.html'
+20220525	08:30:03	f301f775-bc5d-463d-b45e-b7227dc6c70d	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/06tut/routes/views/index.html'

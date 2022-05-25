@@ -1,0 +1,29 @@
+{
+  "name": "05tut",
+  "version": "1.0.0",
+  "description": "Express Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temycodes/node.git"
+  },
+  "author": "thetemicode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temycodes/node/issues"
+  },
+  "homepage": "https://github.com/temycodes/node#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^2.28.0",
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
