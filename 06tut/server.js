@@ -42,13 +42,17 @@ app.use(express.static(path.join(__dirname, './public')));
 
 /**GET file tree route */
 //basically, middleware are functins that have access to the res, req object
+//app.use does not accept regEx
 app.get('^/$|/index(.html)?', (req, res) => {
     //regEx specified with a route 
     // res.sendFile('./views/index.html', {root: __dirname});
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
+/**subdir*/
+app.use('/subdir', express.static(path.join(__dirname, './public')));
 app.use('/subdir', require('./routes/subdir'));
+/**subdir */
 
 app.get('/new-page(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'new-page.html'));

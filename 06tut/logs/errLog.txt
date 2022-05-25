@@ -14,3 +14,5 @@
 20220524	22:22:52	56dd6379-7ecd-4aac-82dc-637df2cdfed7	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
 20220524	22:24:15	7ef572d8-a454-49ff-a95a-cc11adb8331b	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
 20220524	22:24:57	ebd36d08-9c90-4ab7-835b-6d2a4eaddb0d	TypeError: The "id" argument must be of type string. Received an instance of IncomingMessage
+20220524	22:28:11	49fd84ba-07ca-409a-b552-d57a28994741	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/06tut/views/subdir/test.html'
+20220524	22:31:07	1d347117-9461-4205-b604-f59ef32cf800	Error: ENOENT: no such file or directory, stat '/home/temisan/Desktop/nodejs/06tut/views/subdir/test.html'
